@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar class="degradado">
+
+    <ion-title>MascotApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="ion-text-center ion-padding">
+    <ion-label class="titulo">¡Guau!</ion-label>
+  </div>
+  <ion-img src="assets/ic_login.svg"></ion-img>
+
+  <ion-item>
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input [(ngModel)]="mdl_user"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="mdl_pass"></ion-input>
+  </ion-item>
+  <ion-button (click)="ingresar()" expand="block" class="degradado">
+    <ion-icon name="paw" slot="start"></ion-icon>
+    Ingresar
+  </ion-button>
+</ion-content>
