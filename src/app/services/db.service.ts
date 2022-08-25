@@ -15,9 +15,8 @@ export class DbService {
         return true;
       } else {
         this.router.navigate(['login']);
-      }
-      this.router.navigate(["login"]);
         return false;
+      }
   }
 
     validarRuta(name: string,password: string) {

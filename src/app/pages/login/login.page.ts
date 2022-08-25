@@ -27,15 +27,6 @@ export class LoginPage implements OnInit {
       this.presentToast();
     }
   }
-  async mostrarMensaje() {
-    const alert = await this.alertController.create({
-      header: 'información',
-      message: 'Credenciales inválidas',
-      buttons: ['OK'],
-    });
-
-    await alert.present();
-  }
 
   async presentToast() {
     const toast = await this.toastController.create({
